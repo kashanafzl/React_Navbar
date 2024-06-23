@@ -1,0 +1,92 @@
+
+
+.maindivofnavbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.maindivofnavbar h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+
+
+.menubaricon{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+ 
+  
+}
+
+
+.uflex{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+   
+}
+
+.uflex li a{
+  color: black;
+  font-size: 1.5rem;
+    text-decoration: none;
+}
+
+@media screen and (max-width:500px) {
+ 
+    .menubaricon{
+        display: block;
+    }
+
+    .uflex{
+        background-color: rgb(231, 224, 224);
+        list-style: none;
+        height: 500px;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        z-index: -2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        gap: 2rem;
+        transition: 1s;
+     
+    }
+
+    .uflex li a{
+        font-size: 2rem;
+    }
+    .newflex{
+        background-color: rgb(231, 224, 224);
+        list-style: none;
+        height: 500px;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        right: 0px;
+        z-index: -2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        gap: 2rem;
+        transition: 1s;
+     
+    }
+
+    .newflex li a{
+        color: black;
+        font-size: 2rem;
+        text-decoration: none;
+    }
+   
+}
